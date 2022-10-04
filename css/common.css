@@ -23,9 +23,13 @@ button {
   cursor: pointer;
 }
 
-gall{
+.gallery{
   display: flex;
   justify-content: space-between;
-  width: auto;
-  height: auto;
+
+}
+
+.gallery_img{
+    width: 80%;
+  height: 100%;
 }

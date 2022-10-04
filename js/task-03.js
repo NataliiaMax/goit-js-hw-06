@@ -13,15 +13,12 @@ const images = [
   },
 ];
 
-// Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
-
 const listGallery = document.querySelector('.gallery');
 
 images.forEach(image => {
   listGallery.insertAdjacentHTML(
     "afterbegin", `<li class = "gallery_item"> <img class = "gallery_img" src = "${image.url}" alt = "${image.alt}"></li>`
-  );
-  // listGallery.classList.add('gall');
-});
- 
+  )
+ });
+
 console.log(listGallery);
