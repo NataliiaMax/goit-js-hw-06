@@ -31,4 +31,5 @@ buttonCreateRef.addEventListener("click", (createBoxes) => {
 
 buttonDestroyRef.addEventListener("click", (destroyBoxes) => {
   inputRef.value = "";
+  wrapperRef.innerHTML = '';
 });
