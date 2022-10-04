@@ -16,7 +16,7 @@ console.log(inputRef);
 buttonCreateRef.addEventListener("click", (createBoxes) => {
   let amount = inputRef.value;
   console.log(amount);
-  let fragment = document.createDocumentFragment();
+  let fragmentRef = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i += 1) {
     let containerRef = document.createElement("div");
@@ -27,12 +27,10 @@ buttonCreateRef.addEventListener("click", (createBoxes) => {
     let randomColor = getRandomHexColor();
     containerRef.style.backgroundColor = randomColor;
     console.log(containerRef);
-    fragment.appendChild(containerRef);
+    fragmentRef.appendChild(containerRef);
   }
-  boxes.appendChild(fragment);
+  wrapperRef.appendChild(fragmentRef);
   console.log(wrapperRef);
-
-  console.log(boxes);
 });
 
 
