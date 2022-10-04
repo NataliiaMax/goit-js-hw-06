@@ -9,10 +9,6 @@ const buttonDestroyRef = document.querySelector(
 const inputRef = document.querySelector("#controls input");
 const wrapperRef = document.querySelector("#boxes");
 
-console.log(buttonCreateRef);
-console.log(buttonDestroyRef);
-console.log(inputRef);
-
 buttonCreateRef.addEventListener("click", (createBoxes) => {
   let amount = inputRef.value;
   console.log(amount);
